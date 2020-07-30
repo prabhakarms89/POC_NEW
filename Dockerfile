@@ -5,5 +5,5 @@ VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/v
 COPY prabha.txt .
 RUN apt-get update && apt-get install -y curl
 #ENTRYPOINT ["apr-get install -y"]
-#CMD ["nano"]
+CMD ["nginx"]
 EXPOSE 80
