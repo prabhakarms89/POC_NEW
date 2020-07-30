@@ -6,3 +6,4 @@ COPY prabha.txt .
 RUN apt-get update && apt-get install -y curl
 ENTRYPOINT ["apr-get install -y"]
 CMD ["nano"]
+EXPOSE 80
